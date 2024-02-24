@@ -1,0 +1,89 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;  /*Hack Box Model*/
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /*1rem = 10px*/
+    font-family: Outfit, sans-serif;
+    background-color: var(--Light-gray);
+    min-height: 100%;
+    position: relative;
+}
+
+.sombra {
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 2.5rem;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.contenedor {
+    max-width: 35rem;
+}
+
+.imagen {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 15px;
+}
+
+/* fuentes */
+h1 {
+    font-size: 2.5rem;
+    color: var(--Dark-blue);
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--Grayish-blue);
+}
+
+
+/* Tarjeta QR */
+.tarjeta {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenido-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-tarjeta h1, .contenido-tarjeta p {
+    text-align: center;
+}
+
+/* Footer */
+
+.attribution {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
